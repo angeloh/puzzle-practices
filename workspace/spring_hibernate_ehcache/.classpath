@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/dist/spring.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/hibernate/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/spring-modules-0.9/spring-modules-cache.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/jakarta-commons/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/dom4j/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/slf4j/slf4j-log4j12-1.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/jakarta-commons/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/jakarta-commons/commons-pool.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/j2ee/jta.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/jakarta-commons/commons-collections.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/cglib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/antlr/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/ehcache/ehcache-1.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/concurrent/backport-util-concurrent.jar"/>
+	<classpathentry kind="lib" path="D:/spring-2.5.5/lib/slf4j/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/jsr107cache-1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

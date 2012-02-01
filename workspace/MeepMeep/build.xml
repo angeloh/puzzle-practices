@@ -1,0 +1,11 @@
+<project name="MeepMeep" basedir="." default="main">
+
+    <property name="src.dir"     value="."/>    
+    <property name="classes.dir" value="."/>
+    
+    <target name="compile">        
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"/>
+    </target>
+
+    <target name="main" depends="compile"/>
+</project>

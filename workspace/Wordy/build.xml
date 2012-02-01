@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="Wordy" default="Main" basedir=".">
+	<!-- Sets variables which can later be used. -->
+	<!-- The value of a property is accessed via ${} -->
+	<property name="base" location="."/>
+	<property name="src"     location="src" />
+	<property name="test"     location="test" />
+	<property name="build"   location="build" />		
+
+	<!-- Define the classpath which includes the junit.jar and the classes after compiling-->
+	<path id="junit.class.path">
+		<pathelement location="lib/junit-4.7.jar" />
+		<pathelement location="${build}" />
+	</path>
+
+	<!-- Deletes the existing build, docs and dist directory-->
+	<target name="clean">
+		<delete dir="${build}" />		
+	</target>
+
+	<!-- Creates the  build, docs and dist directory-->
+	<target name="makedir">
+		<mkdir dir="${build}" />			
+	</target>
+
+	<!-- Compiles the java code (including the usage of library for JUnit -->
+	<target name="compile" depends="clean, makedir">
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath refid="junit.class.path" />
+		</javac>
+		<javac srcdir="${test}" destdir="${build}">
+			<classpath refid="junit.class.path" />
+		</javac>
+	</target>
+
+	<!-- Run the JUnit Tests -->
+	<target name="junit" depends="compile">
+		<junit printsummary="yes" fork="yes" haltonfailure="yes">
+			<classpath refid="junit.class.path" />
+			<formatter type="plain" />
+			<test name="com.guidewire.wordy.WordScorerTest" />
+			<test name="com.guidewire.wordy.WordValidatorTest" />
+			<test name="com.guidewire.wordy.WordyTest" />
+		</junit>
+
+	</target>
+
+	<target name="Main" depends="compile, junit">
+		<description>Main target</description>
+	</target>
+
+</project>

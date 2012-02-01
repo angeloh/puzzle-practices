@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="ST_entry">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ghosts"/>
+			<xs:enumeration value="gnat"/>
+			<xs:enumeration value="spider"/>
+			<xs:enumeration value="unicorns"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CT_list">
+		<xs:sequence>
+			<xs:element ref="entry" maxOccurs="unbounded"/>
+			<xs:element ref="list" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="animals"/>
+					<xs:enumeration value="bugs"/>
+					<xs:enumeration value="imaginary"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="list" type="CT_list"/>
+	<xs:element name="entry" type="ST_entry"/>
+</xs:schema>

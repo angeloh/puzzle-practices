@@ -1,0 +1,102 @@
+DEBUG main com.sumware.quiz.Main - Hello world.
+INFO main com.sumware.quiz.Main - What a beatiful day.
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.NullPointerException
+	at com.sumware.quiz.Main.main(Main.java:38)
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.RuntimeException: Failed to create the ObjectFactory: null
+	at com.sumware.quiz.ObjectFactorySelector.getObjectFactory(ObjectFactorySelector.java:25)
+	at com.sumware.quiz.Main.main(Main.java:37)
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.RuntimeException: Failed to create the ObjectFactory: ObjectFactory
+	at com.sumware.quiz.ObjectFactorySelector.getObjectFactory(ObjectFactorySelector.java:21)
+	at com.sumware.quiz.Main.main(Main.java:37)
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.NullPointerException
+	at java.util.Calendar.setTime(Calendar.java:1032)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:785)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:778)
+	at java.text.DateFormat.format(DateFormat.java:314)
+	at com.sumware.quiz.Vehicle.toString(Vehicle.java:216)
+	at com.sumware.quiz.Main.main(Main.java:43)
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.NullPointerException
+	at java.util.Calendar.setTime(Calendar.java:1032)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:785)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:778)
+	at java.text.DateFormat.format(DateFormat.java:314)
+	at com.sumware.quiz.Vehicle.toString(Vehicle.java:216)
+	at com.sumware.quiz.Main.main(Main.java:43)
+ERROR main com.sumware.quiz.Main - Error in creating objects from CSV:
+java.lang.NullPointerException
+	at java.util.Calendar.setTime(Calendar.java:1032)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:785)
+	at java.text.SimpleDateFormat.format(SimpleDateFormat.java:778)
+	at java.text.DateFormat.format(DateFormat.java:314)
+	at com.sumware.quiz.Vehicle.toString(Vehicle.java:216)
+	at com.sumware.quiz.Main.main(Main.java:43)
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:com.sumware.quiz.Option@10b4199, com.sumware.quiz.Option@1ffb8dc, com.sumware.quiz.Option@1c184f4, com.sumware.quiz.Option@1ffbd68, com.sumware.quiz.Option@ec16a4, com.sumware.quiz.Option@1c29ab2
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:com.sumware.quiz.Option@337838, com.sumware.quiz.Option@119cca4, com.sumware.quiz.Option@ca2dce, com.sumware.quiz.Option@18558d2, com.sumware.quiz.Option@18a47e0, com.sumware.quiz.Option@174cc1f, com.sumware.quiz.Option@1050e1f
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:com.sumware.quiz.Option@e24e2a, com.sumware.quiz.Option@179c285, com.sumware.quiz.Option@d1e604
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:com.sumware.quiz.Option@54172f, com.sumware.quiz.Option@be2358, com.sumware.quiz.Option@1027b4d, com.sumware.quiz.Option@1ed2ae8
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:com.sumware.quiz.Option@19c26f5, com.sumware.quiz.Option@c1b531, com.sumware.quiz.Option@15eb0a9
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:com.sumware.quiz.Option@10b4199, com.sumware.quiz.Option@1ffb8dc, com.sumware.quiz.Option@1c184f4, com.sumware.quiz.Option@1ffbd68, com.sumware.quiz.Option@ec16a4, com.sumware.quiz.Option@1c29ab2
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:com.sumware.quiz.Option@337838, com.sumware.quiz.Option@119cca4, com.sumware.quiz.Option@ca2dce, com.sumware.quiz.Option@18558d2, com.sumware.quiz.Option@18a47e0, com.sumware.quiz.Option@174cc1f, com.sumware.quiz.Option@1050e1f
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:com.sumware.quiz.Option@e24e2a, com.sumware.quiz.Option@179c285, com.sumware.quiz.Option@d1e604
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:com.sumware.quiz.Option@54172f, com.sumware.quiz.Option@be2358, com.sumware.quiz.Option@1027b4d, com.sumware.quiz.Option@1ed2ae8
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:com.sumware.quiz.Option@19c26f5, com.sumware.quiz.Option@c1b531, com.sumware.quiz.Option@15eb0a9
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:[B, 9, 5],[C, 0, 3],[G, 0, 2],[G, 4, 6],[L, 6, 0],[P, 9, 3]
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:[B, 9, 5],[C, 0, 3],[G, 0, 2],[G, 4, 6],[L, 6, 0],[P, 9, 3],[S, 0, 1]
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:[C, 0, 3],[G, 0, 2],[L, 6, 0]
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:[C, 0, 3],[G, 0, 2],[L, 6, 0],[S, 0, 1]
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:[C, 0, 3],[G, 0, 2],[L, 6, 0]
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:B95,C03,G02,G46,L60,P93
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:B95,C03,G02,G46,L60,P93,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:C03,G02,L60
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:C03,G02,L60,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:C03,G02,L60
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:B95,C03,G02,G46,L60,P93
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:B95,C03,G02,G46,L60,P93,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:C03,G02,L60
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:C03,G02,L60,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:C03,G02,L60
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-102361	I2608	05	IN	FX35-87215	A	KH3	J	0	38440	04-05-2005
+Options:B95,C03,G02,G46,L60,P93
+INFO main com.sumware.quiz.Main - 319	JNRAS08U25X-102274	I2614	05	IN	FX35-87215	A	KY0	J	0	40390	04-05-2005
+Options:B95,C03,G02,G46,L60,P93,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U85X-101856	I2642	05	IN	FX35-87215	A	KH3	J	0	38240	04-05-2005
+Options:C03,G02,L60
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101814	I2664	05	IN	FX35-87215	A	EY0	J	0	40190	04-05-2005
+Options:C03,G02,L60,S01
+INFO main com.sumware.quiz.Main - 319	JNRAS08U35X-101733	I2675	05	IN	FX35-87215	A	BW9	G	0	38240	04-05-2005
+Options:C03,G02,L60
+ERROR main com.sumware.quiz.VehicleParserImpl - Options 'C03G02L' is wrong format.
+WARN main com.sumware.quiz.VehicleParserImpl - Line format is wrong:
+WARN main com.sumware.quiz.VehicleParserImpl - "JNRAS08U35X","101733","I2675","05","IN","FX35","87215","A","BW9","G","C03G02L60","0000000","038240","04052005"
+WARN main com.sumware.quiz.VehicleParserImpl - Line format is wrong:
+WARN main com.sumware.quiz.VehicleParserImpl - "319","JNRAS08U35X","101733","I2675","05","IN","FX35","87215","A","BW9","G","C03G02L60","0000000","038240","04052005","04052005"

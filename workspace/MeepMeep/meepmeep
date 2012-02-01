@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ "$#" -eq 0 ];
+then
+  echo "Please enter input file to run this program!"
+  exit 2
+fi
+
+#ant > ant.log
+java -cp . MeepMeep $1
+exit 0

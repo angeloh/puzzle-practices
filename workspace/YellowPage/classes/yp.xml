@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list name="animals">
+        <entry>ghosts</entry>
+        <list name="imaginary">
+          <entry>unicorns</entry>
+        </list>
+        <list name="bugs">
+          <entry>spider</entry>
+          <entry>gnat</entry>
+        </list>
+</list>

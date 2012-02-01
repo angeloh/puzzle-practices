@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:ehcache="http://www.springmodules.org/schema/ehcache"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springmodules.org/schema/ehcache 
+            http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd">
+    
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+   		<property name="dataSource" ref="dataSource"/>
+   		<property name="packagesToScan" value="com.model"/>
+   		<property name="hibernateProperties">
+		<props>
+			<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+		</props>
+	</property>
+ 	</bean> 
+    
+   
+    <!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="conf/hibernate.properties"/>
+	</bean>
+
+    <!-- Generic DAO - can be used when doing standard CRUD -->
+    <bean id="dao" class="com.dao.hibernate.BaseDAOHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- DishDAO: Hibernate implementation -->
+    <bean id="dishDAO" class="com.dao.hibernate.DishDAOHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- MenuDAO: Hibernate implementation -->
+    <bean id="menuDAO" class="com.dao.hibernate.MenuDAOHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- RestaurantDAO: Hibernate implementation -->
+    <bean id="restaurantDAO" class="com.dao.hibernate.RestaurantDAOHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+     <!-- ehcache configuration -->
+    <ehcache:config configLocation="conf/eh-cache.xml" />
+
+	<ehcache:annotations>
+		<ehcache:caching id="dishCacheModel" cacheName="dishCache" />
+		<ehcache:caching id="menuCacheModel" cacheName="menuCache" />
+		<ehcache:caching id="restaurantCacheModel" cacheName="restaurantCache" />
+		<ehcache:flushing id="dishCacheModel" cacheNames="dishCache" when="before" />
+		<ehcache:flushing id="menuCacheModel" cacheNames="menuCache" when="before" />
+		<ehcache:flushing id="restaurantCacheModel" cacheNames="restaurantCache" when="before" />
+	</ehcache:annotations>
+
+</beans>

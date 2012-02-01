@@ -197,7 +197,7 @@ public class JavaPractice1 {
 		oldNode = dn;
 		while(oldNode != null) {
 			DNode newNode = oldNode.other;
-			newNode.other = newNode.next.other;
+			newNode.other = newNode.next;
 			oldNode = oldNode.next;
 		}
 		

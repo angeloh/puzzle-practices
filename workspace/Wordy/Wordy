@@ -1,0 +1,4 @@
+#!/bin/sh
+ant
+java -cp ./build com.guidewire.wordy.WordyGame
+exit 0
